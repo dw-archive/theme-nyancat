@@ -1,6 +1,21 @@
-# Datawrapper Nyan Cat theme
-
 ## A Datawrapper theme?
+
+```
++      o     +              o   
+    +             o     +       +
+o          +
+    o  +           +        +
++        o     o       +        o
+-_-_-_-_-_-_-_,------,      o
+_-_-_-_-_-_-_-|   /\_/\  
+-_-_-_-_-_-_-~|__( ^ .^)  +     +  
+_-_-_-_-_-_-_-""  ""      
++      o         o   +       o
+    +         +
+o        o         o      o     +
+    o           +
++      +     o        o      +    
+```
 
 Datawrapper comes with the ability to be adapter to the user needs via plugins. Its simple architecture provides a way to extend basic functionalities using an hook system (inspired by the well kown WordPress architecture). Each plugin can extend the core and some are dedicated to charts customizations (changing colors, backgrounds, typos, etc). We're about to learn how to set up this last one.
 
@@ -141,4 +156,5 @@ Then import static files
   
 Your theme is now up and running !
 
-![Theme preview](http://i.imgur.com/qq4mrrE.png?1)
+***
+Crédit : [@pirhoo](http://github.com/pirhoo)
