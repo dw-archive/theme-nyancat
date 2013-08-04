@@ -1,0 +1,73 @@
+@font-face{
+	font-family:SilkscreenNormal;
+	src:url("./slkscr.ttf");
+	font-weight:400;
+	font-style:normal;
+}
+
+body.chart {
+	background:#013567 repeat url("./bg.gif");
+	color:white;
+	font-family:SilkscreenNormal, Monaco, "Courier New", Courier, monospace;
+}
+
+body.chart a {
+	color:#FF3399;
+}
+
+#header {
+	padding:5px;
+}
+
+#header h1 {
+	font-size:40px;
+	text-decoration:underline;
+	font-weight:bold;
+}
+
+#header .chart-intro {
+	font-size:18px;	
+}
+
+.label span {
+	text-shadow:none;
+	color:white; 
+	font-weight:bold;
+}
+
+body .label.series  span {
+	display:inline;	
+	background:#fff;
+	color:#000;
+} 
+
+.label.outline span,
+.label.axis span {
+	color:black;
+}
+
+body #footer {
+	color:inherit;
+	height:50px;
+	background:#00008B;	
+	z-index:1100;
+	overflow:hidden;
+}
+
+#footer .footer-left {
+	background:#00008B url("./rain.gif") repeat-x bottom;
+	height:40px;
+	left:0;
+	bottom:0;
+	padding-top:0px;
+	padding-left:10px;	
+}
+
+
+#footer .footer-left:after{
+	position:absolute;
+	left:100%;
+	bottom:-3px;
+	content:url("./cat.gif");
+}
+
