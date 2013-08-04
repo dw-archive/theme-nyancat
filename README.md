@@ -157,4 +157,4 @@ Then import static files
 Your theme is now up and running !
 
 ***
-Crédit : [@pirhoo](http://github.com/pirhoo)
+Credits: [@pirhoo](http://github.com/pirhoo)
