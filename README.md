@@ -156,5 +156,7 @@ Then import static files
   
 Your theme is now up and running !
 
+![preview](http://i.imgur.com/qq4mrrE.png?1)
+
 ***
 Credits: [@pirhoo](http://github.com/pirhoo)
