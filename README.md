@@ -1,20 +1,20 @@
 ## A Datawrapper theme?
 
 ```
-+      o     +              o   
-    +             o     +       +
-o          +
-    o  +           +        +
-+        o     o       +        o
--_-_-_-_-_-_-_,------,      o
-_-_-_-_-_-_-_-|   /\_/\  
--_-_-_-_-_-_-~|__( ^ .^)  +     +  
-_-_-_-_-_-_-_-""  ""      
-+      o         o   +       o
-    +         +
-o        o         o      o     +
-    o           +
-+      +     o        o      +    
++      o     +      o     +      o     +              o   
+    +            +            +             o     +       +
+o          +                     +
+    o  +         +          +           +        +
++        o   +        o   +        o     o       +        o
+-_-_-_-_-_-_--_-_-_-_-_-_--_-_-_-_-_-_-_,------,      o
+_-_-_-_-_-_-__-_-_-_-_-_-__-_-_-_-_-_-_-|   /\_/\  
+-_-_-_-_-_-_--_-_-_-_-_-_--_-_-_-_-_-_-~|__( ^ .^)  +     +  
+_-_-_-_-_-_-__-_-_-_-_-_-__-_-_-_-_-_-_-""  ""      
++      o     +      o     +      o         o   +       o
+    +            +            +         +
+o        o            o             o         o      o     +
+    o            o            o           +
++      +     +      +     +      +     o        o      +    
 ```
 
 Datawrapper comes with the ability to be adapter to the user needs via plugins. Its simple architecture provides a way to extend basic functionalities using an hook system (inspired by the well kown WordPress architecture). Each plugin can extend the core and some are dedicated to charts customizations (changing colors, backgrounds, typos, etc). We're about to learn how to set up this last one.
@@ -29,18 +29,19 @@ For this tutorial we work into the `/plugins/theme-nyancat`. For quick start, ju
 This command will create your theme into `/plugins` taking care of using the *theme-* prefix for you. Now you should have the following files into the plugin directory:   
 
 ```
->  plugins/theme-nyancat
-    LICENCE
-    README.md
-    package.json
-    plugin.php
-    > static
-        bg.gif
-        cat.gif
-        nyancat.css
-        nyancat.js
-        rain.gif
-        slkscr.ttf
+.  plugins/theme-nyancat
+├── LICENSE
+├── package.json
+├── plugin.php
+├── README.md
+└── static
+    ├── bg.gif
+    ├── cat.gif
+    ├── nyancat.css
+    ├── nyancat.js
+    ├── rain.gif
+    └── slkscr.ttf
+
 ```
 
 ### Plugin's meta data
