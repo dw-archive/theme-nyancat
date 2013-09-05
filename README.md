@@ -17,16 +17,16 @@ o        o            o             o         o      o     +
 +      +     +      +     +      +     o        o      +    
 ```
 
-Datawrapper comes with the ability to be adapter to the user needs via plugins. Its simple architecture provides a way to extend basic functionalities using an hook system (inspired by the well kown WordPress architecture). Each plugin can extend the core and some are dedicated to charts customizations (changing colors, backgrounds, typos, etc). We're about to learn how to set up this last one.
+Datawrapper comes with the ability to adapt to the user needs via plugins. Its simple architecture provides a way to extend basic functionalities using an hook system (inspired by the well kown WordPress architecture). Each plugin can extend the core and some are dedicated to charts customizations (changing colors, backgrounds, typos, etc). We're about to learn how to set up this last one.
 
 ## Study the existing theme
 
 ### Setup Files
-For this tutorial we work into the `/plugins/theme-nyancat`. For quick start, just git clone this repository (from the root):
+For this tutorial we work into the `/plugins/theme-nyancat`. For a quick start, simply git clone this repository (from the root):
     
     git clone https://github.com/datawrapper/theme-nyancat ./plugins/theme-nyancat 
     
-This command will create your theme into `/plugins` taking care of using the *theme-* prefix for you. Now you should have the following files into the plugin directory:   
+This command will create your theme into `/plugins` taking care to use the *theme-* prefix for you. Now you should have the following files into the plugins directory:   
 
 ```
 .  plugins/theme-nyancat
