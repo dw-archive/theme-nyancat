@@ -149,11 +149,11 @@ body.chart {
 
 To activate the plugin, just enter this command:
 
-    php script/plugin.php install theme-nyancat
+    php scripts/plugin.php install theme-nyancat
   
 Then import static files
 
-    php script/plugin.php reload
+    php scripts/plugin.php reload
   
 Your theme is now up and running !
 
