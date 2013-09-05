@@ -17,12 +17,12 @@ o        o            o             o         o      o     +
 +      +     +      +     +      +     o        o      +    
 ```
 
-Datawrapper comes with the ability to adapt to the user needs via plugins. Its simple architecture provides a way to extend basic functionalities using an hook system (inspired by the well kown WordPress architecture). Each plugin can extend the core and some are dedicated to charts customizations (changing colors, backgrounds, typos, etc). We're about to learn how to set up this last one.
+Datawrapper comes with the ability to adapt to the user's needs via plugins. Its simple architecture provides a way to extend basic functionalities using an hook system (inspired by the well-known WordPress architecture). Each plugin can extend the core and some are dedicated to charts customizations (changing colors, backgrounds, typos, etc). We're about to learn how to set up this last one.
 
-## Study the existing theme
+## Studying the existing theme
 
 ### Setup Files
-For this tutorial we work into the `/plugins/theme-nyancat`. For a quick start, simply git clone this repository (from the root):
+For this tutorial we work into the `/plugins/theme-nyancat` directory. For a quick start, simply git clone this repository (from the root):
     
     git clone https://github.com/datawrapper/theme-nyancat ./plugins/theme-nyancat 
     
@@ -44,38 +44,38 @@ This command will create your theme into `/plugins` taking care to use the *them
 
 ```
 
-### Plugin's meta data
-Let's take a look of package.json. This file follows the syntaxe of its cousin from [Node Package Manager](http://package.json.nodejitsu.com/):
+### The plugin's meta data
+Let's take a look at package.json. This file follows the syntax of its cousin from [Node Package Manager](http://package.json.nodejitsu.com/):
     
     {
         "name": "Nyan cat theme",
         "version": "0.0.0"
     }
 
-### Plugin's behavior
-Much more important, after comes the plugin.php that defined the behavior of your plugin. This file contains a class that extends the `DatawrapperPlugin` class:
+### The plugin's behavior
+Thereafter comes the much more important plugin.php, which defines the behavior of your plugin. This file contains a class that extends the `DatawrapperPlugin` class:
 
 ```php    
 <?php
 // Here we extend the DatawrapperPlugin class.
-// This is the most important file into our plugin 
+// This is the most important file in our plugin 
 class DatawrapperPlugin_ThemeNyancat extends DatawrapperPlugin {
-    // This init function defined what the plugin aims for.
+    // This init function defines what the plugin aims for.
     public function init() {
         // Here we use the DatawrapperTheme static method to register 
         // the meta data of our theme.
         DatawrapperTheme::register($this, $this->getMeta());
     }
-    // This private method defined the meta data that drive our theme
+    // This private method defines the meta data that drive our theme
     private function getMeta() {
         // The meta data are represented as an associative array
         return array(
             // This unique id is very important
-            // to help us to identify our plugin 
-            // amoung the others 
+            // to help us identify our plugin 
+            // among the others 
             'id' => 'nyancat',
             // This option is central for this because
-            // it says that the inherits properties from the 'default' theme 
+            // it says that it inherits properties from the 'default' theme 
             'extends' => 'default',            
             // Some display options
             'title' => 'Nyan Cat',
@@ -91,14 +91,14 @@ class DatawrapperPlugin_ThemeNyancat extends DatawrapperPlugin {
     }
 } // EOF
 ```
-### Theme registering
-Now take a look of the `nyancat.js`. As you can see the filename is the same as the *id* defined before into `plugin.php`:
+### Theme registration
+Now take a look at `nyancat.js`. As you can see the filename is the same as the *id* defined before in `plugin.php`:
 
 ```javascript
 (function(){
-    // This function allow us to resiter our theme into the client-side script.
-    // We use the same id as the one defined into plugin.php and say explicitely 
-    // wich theme is its parent ('default'). This argument is optional.
+    // This function allows us to register our theme in the client-side script.
+    // We use the same id as the one defined in plugin.php and say explicitly 
+    // which theme is its parent ('default'). This argument is optional.
     dw.theme.register('nyancat', 'default', {
         colors: {
             // The palette options defined the colors available within each chart.
@@ -108,14 +108,14 @@ Now take a look of the `nyancat.js`. As you can see the filename is the same as 
             axis: '#fff',
             // Default color use for positive values
             positive: '#FF9900',
-            // Default color use for neagtives values
+            // Default color use for negative values
             negative: '#FE99FE',
             background: '#00008B'
         },
-        // Grid's options
+        // Grid options
         horizontalGrid: { stroke: '#fff' },
         verticalGrid:   { stroke: '#fff' },
-        // Here a way to add option for a specific visualisation 
+        // Here is a way to add an option for a specific visualization 
         columnChart: {
             cutGridLines: true
         },
@@ -126,7 +126,7 @@ Now take a look of the `nyancat.js`. As you can see the filename is the same as 
 ```
 
 ### Theme stylesheet
-At last, look at `nyancat.css` still named as follow the *id* option. Here a few extracts :
+At last, look at `nyancat.css`, which name is the same as in the *id* option. Here is an excerpt :
 
 ```css
 body.chart {
