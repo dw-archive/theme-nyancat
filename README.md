@@ -81,6 +81,8 @@ class DatawrapperPlugin_ThemeNyancat extends DatawrapperPlugin {
             'title' => 'Nyan Cat',
             'link' => 'http://www.datawrapper.de',
             'restricted' => NULL,
+            // We encrouage you to use the 'version' field as much as possible
+            // to ensure a good refreshing of the assets
             'version' => '0.0.0',
             'option-filter' => array(
                 'line-chart' => array(
