@@ -15,8 +15,7 @@ Theme::register(array(
     // Some display options
     'title' => 'Nyan Cat',
     'link' => 'http://www.datawrapper.de',
-    'restricted' => NULL,
-    'version' => '0.0.0',
+    'version' => '1.1.0',
     'option-filter' => array(
         'line-chart' => array(
             'show-grid' => true,
