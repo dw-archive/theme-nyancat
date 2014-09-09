@@ -7,6 +7,8 @@ Theme::register(array(
     // to help us to identify our plugin 
     // amoung the others 
     'id' => 'nyancat',
+    // name of this plugin
+    'plugin' => 'theme-nyancat',
     // This option is central for this because
     // it says that the inherits properties from the 'default' theme 
     'extends' => 'default',            
