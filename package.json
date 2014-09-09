@@ -1,4 +1,6 @@
 {
 	"name": "Nyan cat theme",
-    "version": "0.0.0"
+    "version": "0.0.0",
+    "author": "Pierre Romera",
+    "description": "A theme hack in Nyan Cat style"
 }
